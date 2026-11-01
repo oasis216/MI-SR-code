@@ -1,0 +1,37 @@
+{
+  "version": "challenger_v001",
+  "method": "v001_probe_only_logistic_C0.01",
+  "feature_set": "probe_only",
+  "feature_columns": [
+    "entropy_pre_final",
+    "entropy_prompt_end",
+    "log_prob_pre_final",
+    "log_prob_prompt_end",
+    "logit_pre_final",
+    "logit_prompt_end",
+    "prob_pre_final",
+    "prob_prompt_end",
+    "probe_log_growth",
+    "probe_probability_growth",
+    "rank_prob_pre_final",
+    "rank_prob_prompt_end",
+    "z_log_prob_pre_final",
+    "z_log_prob_prompt_end"
+  ],
+  "model": {
+    "name": "logistic_C0.01",
+    "family": "logistic",
+    "parameter": 0.01
+  },
+  "selection": "highest candidate probability among four alternatives",
+  "development_protocol": "5-fold StratifiedGroupKFold by q_idx",
+  "discovery_metrics": {
+    "method": "v001_probe_only_logistic_C0.01",
+    "n_wrong": 263,
+    "challenger_gold": 97,
+    "challenger_gold_rate": 0.3688212927756654,
+    "random_baseline": 0.25,
+    "one_sided_exact_p_vs_25pct": 1.292988673704064e-05
+  },
+  "holdout_labels_seen": false
+}

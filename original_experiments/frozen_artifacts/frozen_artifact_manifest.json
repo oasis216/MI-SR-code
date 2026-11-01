@@ -1,0 +1,26 @@
+{
+  "split_hash": "66dc5271b626a3d0d618a6c9d96936305542893734087b711c9fba26ee0f03d2",
+  "challenger": {
+    "config": "frozen_challenger_v001.json",
+    "config_sha256": "2f5b0f9b4b98b842f7ad63639dc34cd113c0b29e65c8a132d8b777270cfafd39",
+    "artifact": "frozen_challenger_v001.joblib",
+    "artifact_sha256": "2ee5b8db708d80fc9fb4d68c1f3b1da0189624a12f30c4902a077ab0798199c8",
+    "training_wrong_cases": 263,
+    "feature_count": 14
+  },
+  "gate": {
+    "config": "frozen_gate_v002.json",
+    "config_sha256": "22e3bcdb2a79c5f90d9a28671a6cc638404fe23f9abacd1651f0579ee22dc746",
+    "artifact": "frozen_gate_v002_models.joblib",
+    "artifact_sha256": "2b029d5c6100e59ae1dd16da8de9d382f01a46228e1744630bc09ca6c433e379",
+    "training_cases": 665,
+    "targets": [
+      "baseline_correct",
+      "targeted_correct",
+      "generic_correct"
+    ],
+    "feature_count": 74
+  },
+  "gold_required_at_inference": false,
+  "outcomes_used_only_for_discovery_fitting": true
+}
